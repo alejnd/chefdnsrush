@@ -1,0 +1,3 @@
+Execute vagrant up and vagrant ssh
+The script is located in the /root directoy 
+just ./dnsrush query.txt result.txt and its done
