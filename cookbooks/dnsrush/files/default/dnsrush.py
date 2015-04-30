@@ -9,7 +9,7 @@ import socket
 
 
 dnsipaddr_buffer =[]
-n_threads = 30
+n_threads = 80
 threads   = []
 instructions ="""dnsrush: Parallel DNS resolver.
 usage: <dns file rercords> <output file> """
