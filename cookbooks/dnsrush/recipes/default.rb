@@ -1,0 +1,25 @@
+#
+# Cookbook Name:: dnsrush
+# Recipe:: default
+#
+# Copyright 2015, YOUR_COMPANY_NAME
+#
+# All rights reserved - Do Not Redistribute
+#
+
+include_recipe "apt"
+
+package 'python2.7' do
+  action :install
+end
+  
+cookbook_file "/root/dnsrush.py" do
+  source "dnsrush.py"
+  mode "0774"
+end
+
+cookbook_file "/root/query.txt" do
+  source "query.txt"
+  mode "0664"
+end
+	  
